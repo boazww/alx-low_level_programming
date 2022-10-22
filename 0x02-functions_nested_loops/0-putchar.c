@@ -2,38 +2,38 @@
 
 /**
 
-* main - Entry point
+ * main - Print "Holberton" followed by a new line.
 
-*
+ * Description: You are not allowed to include standard libraries.
 
-* Return: Always returns 0
+ * Return: 0
 
-*
-
-*/
+ */
 
 int main(void)
   
 {
   
-_putchar('H');
+char holberton[] = "Holberton";
   
-_putchar('o');
+int i = 0;
   
-_putchar('l');
+
   
-_putchar('b');
-  
-_putchar('e');
-  
-_putchar('r');
-  
-_putchar('t');
-  
-_putchar('o');
-  
-_putchar('n');
+while (holberton[i] != '\0')
+    
+{
+      
+_putchar(holberton[i]);
+      
+i++;
+      
+}
+
 _putchar('\n');
+  
+
+  
 return (0);
- 
+  
 }
