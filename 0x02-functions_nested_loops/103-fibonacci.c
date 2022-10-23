@@ -1,13 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
 /**
- * main - Entry point
+ * main - main function
  *
- * Return: Always 0 (Success)
+ * Return: nothing
  */
 int main(void)
 {
+	int counter = 0;
+	long int a = 1;
+	long int b = a;
+	long int c = a + b;
 
+	while (c < 4000000)
+	{
+		if (c % 2 == 0)
+		{
+			counter += c;
+		}
+		a = b;
+		b = c;
+		c = a + b;
+	}
+	printf("%d\n", counter);
 	return (0);
 }
